@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(73, 72, 72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.outer{
+    min-height: 350px;
+    width: 600px;
+    background-color: #CDD7D6;
+    border-radius: 26px;
+    margin-top: 300px;
+}
+
+.innerText{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;   
+}
+
+.innerText h2{
+    font-size: 26px;
+    font-weight:700;
+    font-family:  sans-serif;
+}
+#text{
+    height: 50px;
+    width: 390px;
+    margin-top: 20px;
+    margin-left: 110px;
+    padding-left: 5px;
+    border: 2px solid #0646a8;
+    border-radius: 5px;
+}
+button{
+    display: flex;
+    height: 60px;
+    width:230px;
+    margin-top: 20px;
+    margin-left: 190px;  
+    background-color:blue; 
+    outline: none;
+    border:2px solid #C7CAC6;
+    border-radius: 5px;
+    padding: 20px 40px 20px 60px;
+    cursor: pointer;
+}
+
+button h3{
+    color: white;
+}
+
+button:hover{
+    background-color: #182843;
+}
+
+.imageBox{
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: -2px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.imageBox img{
+    height: 200px;
+    width: 200px;
+    margin: 10px 0px 0px 207px;
+}
+
+.imageBox.show-img{
+    max-height: 200px;
+    overflow: visible;
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+
+    25%{
+        transform: translateX(-2px);
+    }
+
+    50%{
+        transform: translateX(0);
+    }
+
+    75%{
+        transform: translateX(2px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+
+
+}
